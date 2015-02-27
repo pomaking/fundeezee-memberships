@@ -13,8 +13,10 @@ Package.on_use(function (api, where) {
   api.use("less");
   api.use("reactioncommerce:core@0.4.1");
 
-  /*api.addFiles("server/register.coffee",["server"]); // register as a reaction package
-
+  api.addFiles("server/register.coffee",["server"]); // register as a reaction package
+  
+  api.addFiles("common/membershipSchema.js",["client","server"]);
+  
   api.addFiles("common/routing.coffee",["client","server"]); // common routing
 
   api.addFiles([
@@ -25,5 +27,5 @@ Package.on_use(function (api, where) {
     "client/templates/dashboard/widget/widget.html",
     "client/templates/dashboard/widget/widget.coffee",
     "client/templates/dashboard/widget/widget.less"
-  ], ["client"]);*/
+  ], ["client"]);
 });

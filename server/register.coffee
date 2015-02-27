@@ -1,5 +1,5 @@
 ReactionCore.registerPackage
-  name: 'reaction-helloworld' # usually same as meteor package
+  name: 'fundeezee-memberships' # usually same as meteor package
   autoEnable: false # auto-enable in dashboard
   settings: # private package settings config (blackbox)
     some_secret: "xxxx"
