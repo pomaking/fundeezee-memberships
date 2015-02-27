@@ -1,14 +1,7 @@
-MembershipSchemaPart = new SimpleSchema({
-	memberType: {
-		label: "I want to register as",
-		type: String,
-		autoform: {
-			options: [
-				{label: "Family / Supporter", value: "familySupporter"},
-				{label: "Business", value: "business"},
-				{label: "Family / Staff", value: "familyStaff"}
-			]
-		}
+FamilyMembershipSchemaPart = new SimpleSchema({
+	membershipType: {
+		label: "Membership Type",
+		type: String
 	},
 	householdDetails: {
 		label: "Household Details",
@@ -41,4 +34,4 @@ MembershipSchemaPart = new SimpleSchema({
 		optional: true
 	}
 });
-MembershipSchema = new SimpleSchema([MembershipSchemaPart, ReactionCore.Schemas.Product]);
+FamilyMembershipSchema = new SimpleSchema([FamilyMembershipSchemaPart, ReactionCore.Schemas.Product]);

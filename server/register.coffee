@@ -9,8 +9,8 @@ ReactionCore.registerPackage
     # dashboard 'app card'.
     {
       provides: 'dashboard'
-      label: 'HelloWorld'
-      description: "HelloWorld Example"
+      label: 'Memberships'
+      description: "Memberships"
       icon: 'fa fa-globe' # glyphicon/fa
       cycle: '2' # Core, Stable, Testing (currently testing)
       container: 'dashboard'  #group this with settings
@@ -18,7 +18,7 @@ ReactionCore.registerPackage
     # configures settings link for app card
     # use 'group' to link to dashboard card
     {
-      route: 'helloworld'
+      route: 'memberships'
       provides: 'settings'
       container: 'dashboard'
     }
@@ -26,8 +26,8 @@ ReactionCore.registerPackage
   # array of permission objects
   permissions: [
     {
-      label: "HelloWorld"
-      permission: "HelloWorld"
+      label: "Memberships"
+      permission: "Memberships"
       group: "Shop Settings"
     }
   ]

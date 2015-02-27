@@ -1,3 +1,5 @@
+MembershipTypes = new Mongo.Collection("membershipType");
+
 MembershipTypeSchema = new SimpleSchema({
 	membershipType: {
 		type: String

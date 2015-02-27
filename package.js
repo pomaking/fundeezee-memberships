@@ -20,9 +20,9 @@ Package.on_use(function (api, where) {
   api.addFiles("common/routing.coffee",["client","server"]); // common routing
 
   api.addFiles([
-    "client/templates/helloworld/helloworld.html",
-    "client/templates/helloworld/helloworld.coffee",
-    "client/templates/helloworld/helloworld.less",
+    "client/templates/memberships/memberships.html",
+    //"client/templates/helloworld/helloworld.coffee",
+    //"client/templates/helloworld/helloworld.less",
 
     "client/templates/dashboard/widget/widget.html",
     "client/templates/dashboard/widget/widget.coffee",
