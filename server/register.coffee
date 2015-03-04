@@ -18,16 +18,28 @@ ReactionCore.registerPackage
     # configures settings link for app card
     # use 'group' to link to dashboard card
     {
-      route: 'memberships'
+      route: 'membershipsSettings'
       provides: 'settings'
       container: 'dashboard'
+    }
+    {
+      route: 'memberships'
+      label: 'Memberships'
+      provides: 'shortcut'
+      icon: 'fa fa-plus'
+    }
+    {
+      route: 'createMembershipType'
+      label: 'Create Membership Type'
+      icon: 'fa fa-plus'
+      provides: 'shortcut'
     }
   ]
   # array of permission objects
   permissions: [
     {
       label: "Memberships"
-      permission: "Memberships"
+      permission: "ReactionCore.Collections.MembershipTypes"
       group: "Shop Settings"
     }
   ]

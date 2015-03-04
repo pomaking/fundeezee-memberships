@@ -5,3 +5,9 @@ Router.map ->
     template: 'memberships'
     waitOn: ->
       return ReactionCore.Subscriptions.Packages
+  @route 'createMembershipType',
+  	controller: ShopAdminController
+  	path: 'dashboard/create-new-membership-type'
+  	template: 'createNewMembershipType'
+  	waitOn: ->
+  		return ReactionCore.Subscriptions.Packages

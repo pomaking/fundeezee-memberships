@@ -7,20 +7,22 @@ Package.describe({
 
 Package.on_use(function (api, where) {
   api.versionsFrom('METEOR@1.0');
-  api.use("meteor-platform@1.2.1");
+  api.use("meteor-platform");
   api.use("templating");
   api.use("coffeescript");
   api.use("less");
-  api.use("reactioncommerce:core@0.4.1");
+  api.use("reactioncommerce:core");
 
   api.addFiles("server/register.coffee",["server"]); // register as a reaction package
   
   api.addFiles("common/membershipSchema.js",["client","server"]);
-  
+  api.addFiles("common/membershipTypes.js", ["client","server"]);
+
   api.addFiles("common/routing.coffee",["client","server"]); // common routing
 
   api.addFiles([
     "client/templates/memberships/memberships.html",
+    "client/templates/memberships/createMembershipType.html",
     //"client/templates/helloworld/helloworld.coffee",
     //"client/templates/helloworld/helloworld.less",
 

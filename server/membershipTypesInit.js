@@ -1,4 +1,4 @@
-Meteor.startup(function () {
+/*Meteor.startup(function () {
 	if(!MembershipTypes.findOne({label: "Individual"})){
 		addDefaultMembershipTypes();		
 	}
@@ -38,4 +38,4 @@ function addDefaultMembershipTypes(){
     price: 10.00,
   	, validate: false
   });
-}
+}*/
